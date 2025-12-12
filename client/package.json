@@ -1,6 +1,7 @@
 {
-  "name": "react-social-network",
-  "version": "1.0.0",
+  "name": "dating-app-frontend",
+  "version": "0.1.0",
+  "homepage": "https://jouwgebruikersnaam.github.io/jouw-repository-naam",  // Dit moet de URL van je GitHub Pages zijn
   "dependencies": {
     "axios": "^0.21.1",
     "react": "^17.0.2",
@@ -9,6 +10,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build", // Bouwt de app voor productie
+    "deploy": "gh-pages -d build" // Deploy naar GitHub Pages
   }
 }
